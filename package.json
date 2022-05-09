@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "analyz": "NODE_ENV=production npm_config_report=true npm run build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -13,7 +14,8 @@
     "highlight.js": "^11.5.1",
     "lodash-es": "^4.17.21",
     "reset.css": "^2.0.2",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
