@@ -91,7 +91,6 @@ import { computed, ref } from "vue";
 import { upperCase } from "lodash-es";
 import { buildPrefix } from "@/utils";
 import { useClipboard } from "@vueuse/core";
-import { ElMessage } from "element-plus";
 
 const props = defineProps<{
   name: string;
@@ -106,9 +105,5 @@ const dom = ref<HTMLElement>();
 const { copy } = useClipboard();
 const handleCopy = () => {
   copy(dom.value?.innerText || "");
-  console.log("xxxxxx");
-  ElMessage({
-    message: "复制成功",
-  });
 };
 </script>

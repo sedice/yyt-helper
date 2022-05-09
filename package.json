@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "upload": "./scripts/upload.sh",
     "analyz": "NODE_ENV=production npm_config_report=true npm run build"
   },
   "dependencies": {
